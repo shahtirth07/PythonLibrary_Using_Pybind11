@@ -1,2 +1,2 @@
 # Math608_Project
-Final Project
+Python package using ctypes to accelerate common data-cleaning operations.
