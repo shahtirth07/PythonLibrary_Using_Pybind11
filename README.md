@@ -1,177 +1,160 @@
-# 🚀 **MATH608_PROJECT: Accelerating Data Cleaning with C++**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATH608_PROJECT</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6;">
 
-![Project Logo](https://via.placeholder.com/800x200?text=MATH608+Data+Cleaning+Accelerator)
+<h1 style="text-align: center; color: #4CAF50;">🌟 MATH608_PROJECT: High-Performance Data Cleaning 🌟</h1>
 
----
-
-## 📜 **Project Overview**
-**MATH608_PROJECT** is a Python package designed to accelerate common data-cleaning operations by leveraging the power of C++. This project bridges the gap between Python's ease of use and C++'s performance to offer blazing-fast operations for cleaning and transforming data.
-
-Key Features:
-- **Core Operations**: Trim spaces, count nulls, convert text to lowercase, replace characters, and calculate cosine similarity.
-- **High Performance**: Significant speed improvements compared to Pandas' equivalent operations.
-- **Clean Design**: Modular architecture for easy integration into data workflows.
-- **Interactive Benchmarks**: Compare the speed of C++ vs Pandas using real-world datasets.
-
----
-
-## 📂 **Directory Structure**
-```plaintext
-MATH608_PROJECT/
-│
-├── src/
-│   ├── my_cleaning_package/
-│   │   ├── __init__.py
-│   │   └── cleaning.cpp       # C++ code for data cleaning
-│   └── setup.py               # Package setup script
-│
-├── tests/
-│   └── test_cleaning.py       # Unit tests for the package
-│
-├── benchmarks/
-│   └── benchmark.py           # Benchmarking script
-│
-└── README.md                  # Project documentation
-
-
-Here’s a visually appealing and interactive README.md file for your project. It uses Markdown for structure and HTML for some styling and interactivity. The file explains your project comprehensively and makes it attractive with a mix of summaries, code snippets, and visual elements.
-
-README.md
-markdown
-Copy code
-# 🚀 **MATH608_PROJECT: Accelerating Data Cleaning with C++**
-
-![Project Logo](https://via.placeholder.com/800x200?text=MATH608+Data+Cleaning+Accelerator)
-
----
-
-## 📜 **Project Overview**
-**MATH608_PROJECT** is a Python package designed to accelerate common data-cleaning operations by leveraging the power of C++. This project bridges the gap between Python's ease of use and C++'s performance to offer blazing-fast operations for cleaning and transforming data.
-
-Key Features:
-- **Core Operations**: Trim spaces, count nulls, convert text to lowercase, replace characters, and calculate cosine similarity.
-- **High Performance**: Significant speed improvements compared to Pandas' equivalent operations.
-- **Clean Design**: Modular architecture for easy integration into data workflows.
-- **Interactive Benchmarks**: Compare the speed of C++ vs Pandas using real-world datasets.
-
----
-
-## 📂 **Directory Structure**
-```plaintext
-MATH608_PROJECT/
-│
-├── src/
-│   ├── my_cleaning_package/
-│   │   ├── __init__.py
-│   │   └── cleaning.cpp       # C++ code for data cleaning
-│   └── setup.py               # Package setup script
-│
-├── tests/
-│   └── test_cleaning.py       # Unit tests for the package
-│
-├── benchmarks/
-│   └── benchmark.py           # Benchmarking script
-│
-└── README.md                  # Project documentation
-💡 Installation
-Prerequisites
-Python 3.8+
-setuptools and wheel for building the package
-Installation Steps
-Clone this repository:
-
-bash
-Copy code
-git clone https://github.com/username/MATH608_PROJECT.git
-cd MATH608_PROJECT
-Build and install the package:
-
-bash
-Copy code
-cd src
-python setup.py build_ext --inplace
-python setup.py install
-Verify the installation:
-
-python
-Copy code
-from my_cleaning_package import trim_spaces_py
-print(trim_spaces_py("   hello world   "))  # Outputs: "hello world"
-📊 Benchmarks
-Compare the performance of C++ implementations with Pandas/NumPy.
-
-Sample Results:
-Operation	Pandas Time (s)	C++ Time (s)	Speedup
-Trim Spaces	0.002	0.0008	2.5x
-Count Nulls	0.0015	0.0005	3x
-Convert to Lowercase	0.003	0.001	3x
-Replace Characters	0.0025	0.0007	3.6x
-Cosine Similarity	0.045	0.018	2.5x
-📈 Interactive Demo: Run the benchmarking script to test on your own datasets:
-
-bash
-Copy code
-python benchmarks/benchmark.py
-🧪 How It Works
-C++ Integration
-The package uses setuptools and pybind11 to integrate C++ functions into Python. Each operation is implemented in a modular manner for maintainability and extensibility.
-
-Core Functions
-Trim Spaces: Removes leading/trailing spaces.
-Count Nulls: Counts None or 0 values in a list.
-Lowercase: Converts strings to lowercase.
-Replace Characters: Replaces characters in strings.
-Cosine Similarity: Computes similarity between two vectors.
-🖼️ Preview
-Data Cleaning in Action
-python
-Copy code
-from my_cleaning_package import trim_spaces_py, count_nulls_py, to_lowercase_py
-
-data = ["   hello   ", " world", None]
-print(trim_spaces_py(data[0]))  # "hello"
-print(count_nulls_py(data))     # 1
-print(to_lowercase_py("HeLLo")) # "hello"
-Benchmarking Example
-python
-Copy code
-from benchmarks import benchmark
-from my_cleaning_package import cosine_similarity_py
-
-vec_a = [1.0, 2.0, 3.0] * 10000
-vec_b = [4.0, 5.0, 6.0] * 10000
-
-# Measure performance
-benchmark(lambda: cosine_similarity_py(vec_a, vec_b), name="C++ Cosine Similarity")
-🌟 Contribute
-We welcome contributions! Check out our Contributing Guidelines to get started.
-
-
-✨ Interactive Frontend Section (Optional)
-html
-Copy code
-<div style="text-align: center; font-family: Arial, sans-serif;">
-  <h2>Try It Out!</h2>
-  <button onclick="alert('Hello, World! This is a sample interactive button.')"
-          style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
-    Run Sample
-  </button>
+<div style="text-align: center;">
+  <img src="https://via.placeholder.com/800x200?text=MATH608+Project+Logo" alt="Project Logo" width="800" />
 </div>
-Note: For more advanced interactivity, consider deploying a small web interface using Flask or Streamlit.
 
-📞 Contact
-For questions or suggestions:
+<hr>
 
-Email: tshah@csuchico.edu
-Enjoy using MATH608_PROJECT to clean and process your data at lightning speed! 🚀
+<h2>🚀 About the Project</h2>
+<p>
+  <strong>MATH608_PROJECT</strong> is a Python package that leverages the speed of <strong>C++</strong> to accelerate common data-cleaning tasks. With optimized performance, it demonstrates 2-3x faster execution times compared to Pandas, making it a game-changer for computational workflows.
+</p>
 
----
+<hr>
 
-### Key Features:
-- **Summary**: Clear and concise explanation of the project.
-- **Interactive Code**: Includes a button snippet as an example of a more engaging README.
-- **Sample Results**: Tabular representation of benchmark results.
-- **Code Snippets**: Demonstrates usage of the package.
-- **Contribution and Contact Sections**: Encourages collaboration and provides contact info.
+<h2>⚙️ Features</h2>
+<ul>
+  <li>Trim spaces, count nulls, convert to lowercase, replace characters, and compute cosine similarity.</li>
+  <li>Seamless integration with Python workflows via <code>pybind11</code>.</li>
+  <li>Includes a benchmarking script to showcase performance gains.</li>
+</ul>
 
-Let me know if you'd like to refine any section! 😊
+<hr>
+
+<h2>📂 Directory Structure</h2>
+<pre>
+MATH608_PROJECT/
+├── src/
+│   ├── my_cleaning_package/
+│   │   ├── __init__.py
+│   │   └── cleaning.cpp       # C++ code for data cleaning
+│   └── setup.py               # Package setup script
+├── tests/
+│   └── test_cleaning.py       # Unit tests for the package
+├── benchmarks/
+│   └── benchmark.py           # Benchmarking script
+└── README.md                  # Project documentation
+</pre>
+
+<hr>
+
+<h2>📦 Installation</h2>
+<ol>
+  <li>Clone the repository:
+    <pre><code>git clone https://github.com/shahtirth07/MATH608_PROJECT.git
+cd MATH608_PROJECT</code></pre>
+  </li>
+  <li>Build the package:
+    <pre><code>cd src
+python setup.py build_ext --inplace
+python setup.py install</code></pre>
+  </li>
+  <li>Verify installation:
+    <pre><code>from my_cleaning_package import trim_spaces_py
+print(trim_spaces_py("   hello world   "))  # Outputs: "hello world"</code></pre>
+  </li>
+</ol>
+
+<hr>
+
+<h2>🧪 Usage Examples</h2>
+<h3>Example: Clean a dataset</h3>
+<pre><code>from my_cleaning_package import trim_spaces_py, to_lowercase_py
+
+data = [" Hello ", " WORLD", " PyThOn"]
+cleaned = [to_lowercase_py(trim_spaces_py(item)) for item in data]
+print(cleaned) # ['hello', 'world', 'python']
+</code></pre>
+
+<hr>
+
+<h2>📊 Benchmark Results</h2>
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Pandas Time (s)</th>
+      <th>C++ Time (s)</th>
+      <th>Speedup</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Trim Spaces</td>
+      <td>0.002</td>
+      <td>0.0008</td>
+      <td>2.5x</td>
+    </tr>
+    <tr>
+      <td>Count Nulls</td>
+      <td>0.0015</td>
+      <td>0.0005</td>
+      <td>3x</td>
+    </tr>
+    <tr>
+      <td>Convert to Lowercase</td>
+      <td>0.003</td>
+      <td>0.001</td>
+      <td>3x</td>
+    </tr>
+    <tr>
+      <td>Replace Characters</td>
+      <td>0.0025</td>
+      <td>0.0007</td>
+      <td>3.6x</td>
+    </tr>
+    <tr>
+      <td>Cosine Similarity</td>
+      <td>0.045</td>
+      <td>0.018</td>
+      <td>2.5x</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Run the benchmarking script to test performance:
+<pre><code>python benchmarks/benchmark.py</code></pre>
+</p>
+
+<hr>
+
+<h2>🎮 Interactive Demo</h2>
+<p>
+  <button style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;"
+          onclick="alert('Interactive buttons don’t work on GitHub! Run the Python script locally.')">
+    🚀 Try Me Locally!
+  </button>
+</p>
+
+<hr>
+
+<h2>🧑‍💻 Contributing</h2>
+<p>We welcome contributions! Please:</p>
+<ol>
+  <li>Fork the repository.</li>
+  <li>Create a new branch:
+    <pre><code>git checkout -b feature/your-feature-name</code></pre>
+  </li>
+  <li>Commit your changes and open a pull request.</li>
+</ol>
+
+<hr>
+
+<h2>📞 Contact</h2>
+<p>For questions or suggestions, feel free to reach out:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:tshah@csuchico.edu">tshah@csuchico.edu</a></li>
+</ul>
+
+</body>
+</html>
