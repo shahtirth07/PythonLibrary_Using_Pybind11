@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MATH608_PROJECT</title>
+  <!-- <title>MATH608_PROJECT</title> -->
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6;">
 
 <h1 style="text-align: center; color: #4CAF50;">🌟 MATH608_PROJECT: High-Performance Data Cleaning 🌟</h1>
 
 <div style="text-align: center;">
-  <img src="https://via.placeholder.com/800x200?text=MATH608+Project+Logo" alt="Project Logo" width="800" />
+  <img src="https://cdn.openai.com/dall-e-2/images/dalle-2-gen-image-logo.png" alt="MATH608 Project Logo" width="400" />
 </div>
+
 
 <hr>
 
