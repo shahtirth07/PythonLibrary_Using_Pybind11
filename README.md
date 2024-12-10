@@ -9,10 +9,6 @@
 
 <h1 style="text-align: center; color: #4CAF50;">🌟 MATH608_PROJECT: High-Performance Data Cleaning 🌟</h1>
 
-<div style="text-align: center;">
-  <img src="https://cdn.openai.com/dall-e-2/images/dalle-2-gen-image-logo.png" alt="MATH608 Project Logo" width="400" />
-</div>
-
 
 <hr>
 
