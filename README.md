@@ -182,17 +182,14 @@ print(cleaned) # ['hello', 'world', 'python']
       <pre><code>cd MATH608_PROJECT</code></pre>
     </li>
     <li><strong>Build the C++ shared library and Python extension:</strong>
-      <pre><code>cd src</code></pre>
-      <pre><code>python setup.py build_ext --inplace</code></pre>
-      <pre><code>python setup.py install</code></pre>
+      <pre><code> cmake -S . -B build</code></pre>
+      <pre><code> cmake --build builde</code></pre>
+      <pre><code>cd build</code></pre>
+      <pre><code>cp data_cleaning.cpython-*.so ../tests/</code></pre>
     </li>
-    <li><strong>Run the tests:</strong>
+    <li><strong>Run the benchmarking tests:</strong>
       <pre><code>cd ../tests</code></pre>
-      <pre><code>pytest test_cleaning.py</code></pre>
-    </li>
-    <li><strong>Run the benchmarking script:</strong>
-      <pre><code>cd ../benchmarks</code></pre>
-      <pre><code>python benchmark.py</code></pre>
+      <pre><code> python3 benchmarks.py </code></pre>
     </li>
   </ol>
 </div>
