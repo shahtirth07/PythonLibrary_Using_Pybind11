@@ -1,0 +1,3 @@
+/mnt/c/Users/tshah/OneDrive - California State University Chico/Desktop/data_cleaning/src/CMakeFiles/data_cleaning.dir
+/mnt/c/Users/tshah/OneDrive - California State University Chico/Desktop/data_cleaning/src/CMakeFiles/edit_cache.dir
+/mnt/c/Users/tshah/OneDrive - California State University Chico/Desktop/data_cleaning/src/CMakeFiles/rebuild_cache.dir
