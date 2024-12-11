@@ -169,5 +169,35 @@ print(cleaned) # ['hello', 'world', 'python']
   </ul>
 </div>
 
+<hr>
+
+<div class="section">
+  <h2>🚀 Running the Code Base</h2>
+  <p>Follow these steps to successfully run the MATH608_PROJECT:</p>
+  <ol>
+    <li><strong>Clone the repository:</strong>
+      <pre><code>git clone https://github.com/shahtirth07/MATH608_PROJECT.git</code></pre>
+    </li>
+    <li><strong>Navigate to the project directory:</strong>
+      <pre><code>cd MATH608_PROJECT</code></pre>
+    </li>
+    <li><strong>Build the C++ shared library and Python extension:</strong>
+      <pre><code>cd src</code></pre>
+      <pre><code>python setup.py build_ext --inplace</code></pre>
+      <pre><code>python setup.py install</code></pre>
+    </li>
+    <li><strong>Run the tests:</strong>
+      <pre><code>cd ../tests</code></pre>
+      <pre><code>pytest test_cleaning.py</code></pre>
+    </li>
+    <li><strong>Run the benchmarking script:</strong>
+      <pre><code>cd ../benchmarks</code></pre>
+      <pre><code>python benchmark.py</code></pre>
+    </li>
+  </ol>
+</div>
+
+<hr>
+
 </body>
 </html>
