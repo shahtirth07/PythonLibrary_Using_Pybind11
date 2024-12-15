@@ -37,12 +37,10 @@
 MATH608_PROJECT/
 ├── src/
 │   ├── my_cleaning_package/
-│   │   ├── __init__.py
-│   │   └── cleaning.cpp       # C++ code for data cleaning
+│   │   ├── bindings.cpp
+│   │   └── data_cleaning.cpp       # C++ code for data cleaning
 │   └── setup.py               # Package setup script
 ├── tests/
-│   └── test_cleaning.py       # Unit tests for the package
-├── benchmarks/
 │   └── benchmark.py           # Benchmarking script
 └── README.md                  # Project documentation
   </pre>
@@ -99,32 +97,26 @@ print(cleaned) # ['hello', 'world', 'python']
     <tbody>
       <tr>
         <td>Trim Spaces</td>
-        <td>0.002</td>
-        <td>0.0008</td>
+        <td>0.036936</td>
+        <td>0.009662</td>
         <td>2.5x</td>
       </tr>
       <tr>
         <td>Count Nulls</td>
-        <td>0.0015</td>
-        <td>0.0005</td>
+        <td>0.016915</td>
+        <td>0.085768</td>
         <td>3x</td>
       </tr>
       <tr>
         <td>Convert to Lowercase</td>
-        <td>0.003</td>
-        <td>0.001</td>
+        <td>0.219419</td>
+        <td>0.222543</td>
         <td>3x</td>
       </tr>
       <tr>
-        <td>Replace Characters</td>
-        <td>0.0025</td>
-        <td>0.0007</td>
-        <td>3.6x</td>
-      </tr>
-      <tr>
         <td>Cosine Similarity</td>
-        <td>0.045</td>
-        <td>0.018</td>
+        <td>0.017106</td>
+        <td>0.008261</td>
         <td>2.5x</td>
       </tr>
     </tbody>
