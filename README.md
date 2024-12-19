@@ -330,17 +330,17 @@ print(result)
         </li>
     </ol>
 
-    <h2>Notes on Optimization</h2>
-    <ul>
-        <li>Even with <code>-O3</code> and <code>-march=native</code>, the performance may still not match that of Python libraries like NumPy. This is because these libraries are built on highly optimized, low-level libraries like BLAS and LAPACK.</li>
-        <li>For even greater performance, consider integrating BLAS/LAPACK directly into your C++ code or using libraries like <a href="https://eigen.tuxfamily.org/dox/" target="_blank">Eigen</a>.</li>
-    </ul>
+<h2>Notes on Optimization</h2>
+<ul>
+    <li>Even with <code>-O3</code> and <code>-march=native</code>, the performance may still not match that of Python libraries like NumPy. This is because these libraries are built on highly optimized, low-level libraries like BLAS and LAPACK.</li>
+    <li>For even greater performance, consider integrating BLAS/LAPACK directly into your C++ code or using libraries like <a href="https://eigen.tuxfamily.org/dox/" target="_blank">Eigen</a>.</li>
+</ul>
 
-    <h2>Conclusion</h2>
-    <p>
+<h2>Conclusion</h2>
+<p>
         Adding compiler optimization flags like <code>-O2</code>, <code>-O3</code>, and <code>-march=native</code> can significantly improve performance for computationally intensive tasks. 
         However, for large-scale numerical operations, leveraging highly optimized libraries or hardware acceleration may provide the best results.
-    </p>
+</p>
 <hr>
 
 </body>
