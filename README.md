@@ -163,7 +163,6 @@ print(cleaned) # ['hello', 'world', 'python']
         <th>Operation</th>
         <th>Python Library Time (s)</th>
         <th>C++ Time (s)</th>
-        <th>Speedup</th>
       </tr>
     </thead>
     <tbody>
@@ -171,25 +170,21 @@ print(cleaned) # ['hello', 'world', 'python']
         <td>Trim Spaces</td>
         <td>0.003315</td>
         <td>0.000065</td>
-        <td>~51x</td>
       </tr>
       <tr>
         <td>Count Nulls</td>
         <td>0.002970</td>
         <td>0.007952</td>
-        <td>~0.37x</td>
       </tr>
       <tr>
         <td>Cosine Similarity</td>
         <td>0.000479</td>
         <td>0.001057</td>
-        <td>~0.45x</td>
       </tr>
       <tr>
         <td>Convert to Lowercase</td>
         <td>0.000002</td>
         <td>0.000072</td>
-        <td>~0.03x</td>
       </tr>
     </tbody>
   </table>
