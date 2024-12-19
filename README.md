@@ -291,18 +291,7 @@ print(cleaned) # ['hello', 'world', 'python']
         <li><strong>Memory Layout:</strong> NumPy arrays are optimized for memory alignment and efficient cache utilization, which contributes to their superior performance.</li>
     </ul>
 
-    <h2>Optimizing the C++ Implementation</h2>
-    <p>To compete with Python libraries, a custom C++ implementation must employ similar optimizations. Here are some suggestions:</p>
-    <ul>
-        <li><strong>Enable SIMD Instructions:</strong> Use libraries such as <a href="https://eigen.tuxfamily.org/dox/" target="_blank">Eigen</a> or <a href="http://arma.sourceforge.net/" target="_blank">Armadillo</a>, or implement SIMD explicitly with AVX or SSE instructions.</li>
-        <li><strong>Parallelize Computation:</strong> Utilize multithreading with <strong>OpenMP</strong> to split the computation across multiple CPU cores.</li>
-        <li><strong>Leverage Efficient Memory Management:</strong> Optimize cache usage and ensure memory alignment for better performance.</li>
-    </ul>
-
-    <h2>Example with OpenMP Parallelization</h2>
-    <p>
-        The C++ implementation can be enhanced using OpenMP for parallelism. Here’s an optimized example:
-    </p>
+    
 
 <hr>
 
