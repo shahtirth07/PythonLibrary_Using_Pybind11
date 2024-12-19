@@ -292,7 +292,56 @@ print(cleaned) # ['hello', 'world', 'python']
     </ul>
 
     
+<h1>Building and Optimizing the C++ Codebase</h1>
+    <p>To improve the performance of your C++ codebase, you can enable compiler optimizations. These optimizations can significantly enhance runtime performance by enabling advanced instruction-level optimizations and hardware-specific tuning. Follow the steps below:</p>
 
+    <h2>Compiler Optimization Flags</h2>
+    <ul>
+        <li><strong>-O2:</strong> Enables a broad set of optimizations that improve runtime performance without significantly increasing compilation time.</li>
+        <li><strong>-O3:</strong> Enables all optimizations in <code>-O2</code> and adds more aggressive ones, such as loop unrolling and vectorization.</li>
+        <li><strong>-march=native:</strong> Generates code optimized for the architecture of the host machine, leveraging specific hardware capabilities.</li>
+    </ul>
+
+    <h2>Steps to Compile with Optimization Flags</h2>
+    <ol>
+        <li>
+            <p>Make sure you have <strong>g++</strong> or a similar compiler installed on your system.</p>
+            <p>To check your compiler version, run:</p>
+            <pre><code>g++ --version</code></pre>
+        </li>
+        <li>
+            <p>Compile your C++ code with optimization flags. For example:</p>
+            <pre><code>g++ -O3 -march=native -fopenmp -o data_cleaning.so data_cleaning.cpp -shared -fPIC `python3 -m pybind11 --includes`</code></pre>
+            <p>This command does the following:</p>
+            <ul>
+                <li>Enables <code>-O3</code> optimizations for maximum performance.</li>
+                <li>Uses <code>-march=native</code> to optimize for the host CPU architecture.</li>
+                <li>Includes <code>-fopenmp</code> to enable OpenMP parallelization.</li>
+                <li>Generates a shared object file (<code>data_cleaning.so</code>) for Python bindings.</li>
+            </ul>
+        </li>
+        <li>
+            <p>Test the compiled code by importing it into Python and running benchmarks.</p>
+            <pre><code>
+import data_cleaning
+# Example: Test cosine similarity function
+result = data_cleaning.cosine_similarity([1, 2, 3], [4, 5, 6])
+print(result)
+            </code></pre>
+        </li>
+    </ol>
+
+    <h2>Notes on Optimization</h2>
+    <ul>
+        <li>Even with <code>-O3</code> and <code>-march=native</code>, the performance may still not match that of Python libraries like NumPy. This is because these libraries are built on highly optimized, low-level libraries like BLAS and LAPACK.</li>
+        <li>For even greater performance, consider integrating BLAS/LAPACK directly into your C++ code or using libraries like <a href="https://eigen.tuxfamily.org/dox/" target="_blank">Eigen</a>.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+        Adding compiler optimization flags like <code>-O2</code>, <code>-O3</code>, and <code>-march=native</code> can significantly improve performance for computationally intensive tasks. 
+        However, for large-scale numerical operations, leveraging highly optimized libraries or hardware acceleration may provide the best results.
+    </p>
 <hr>
 
 </body>
