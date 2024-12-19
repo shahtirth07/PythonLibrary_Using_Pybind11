@@ -180,7 +180,7 @@ print(cleaned) # ['hello', 'world', 'python']
     <thead>
       <tr>
         <th>Operation</th>
-        <th>Pandas Time (s)</th>
+        <th>Python Library Time (s)</th>
         <th>C++ Time (s)</th>
         <th>Speedup</th>
       </tr>
@@ -188,30 +188,33 @@ print(cleaned) # ['hello', 'world', 'python']
     <tbody>
       <tr>
         <td>Trim Spaces</td>
-        <td>0.036936</td>
-        <td>0.009662</td>
-        <td>2.5x</td>
+        <td>0.003315</td>
+        <td>0.000065</td>
+        <td>~51x</td>
       </tr>
       <tr>
         <td>Count Nulls</td>
-        <td>0.016915</td>
-        <td>0.085768</td>
-        <td>3x</td>
-      </tr>
-      <tr>
-        <td>Convert to Lowercase</td>
-        <td>0.219419</td>
-        <td>0.222543</td>
-        <td>3x</td>
+        <td>0.002970</td>
+        <td>0.007952</td>
+        <td>~0.37x</td>
       </tr>
       <tr>
         <td>Cosine Similarity</td>
-        <td>0.017106</td>
-        <td>0.008261</td>
-        <td>2.5x</td>
+        <td>0.000479</td>
+        <td>0.001057</td>
+        <td>~0.45x</td>
+      </tr>
+      <tr>
+        <td>Convert to Lowercase</td>
+        <td>0.000002</td>
+        <td>0.000072</td>
+        <td>~0.03x</td>
       </tr>
     </tbody>
   </table>
+  <p>
+    The results demonstrate that <strong>C++</strong> can achieve significant performance benefits for certain tasks, while for others, Python's optimized libraries like Pandas and NumPy remain competitive or faster. Use cases where C++ shines involve tasks requiring raw computational power or processing large datasets.
+  </p>
   <p>Run the benchmarking script to test performance:
     <pre><code>python benchmarks/benchmark.py</code></pre>
   </p>
