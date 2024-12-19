@@ -105,7 +105,7 @@
 <div class="section">
   <h2>🚀 About the Project</h2>
   <p>
-    <strong>MATH608_PROJECT</strong> is a Python package that leverages the speed of <strong>C++</strong> to accelerate common data-cleaning tasks. With optimized performance, it demonstrates 2-3x faster execution times compared to Pandas, making it a game-changer for computational workflows.
+    <strong>PythonLibrary_Using_PyBind11</strong> is a Python package that leverages the speed of <strong>C++</strong> to accelerate common data-cleaning tasks. With optimized performance, it is expected 2-3x faster execution times compared to Pandas/Numpy, making it a game-changer for computational workflows.
   </p>
 </div>
 
