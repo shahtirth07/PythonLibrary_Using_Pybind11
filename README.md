@@ -247,14 +247,6 @@ print(cleaned) # ['hello', 'world', 'python']
 
 <hr>
 
-<div class="section">
-  <h2>📞 Contact</h2>
-  <p>For questions or suggestions, feel free to reach out:</p>
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:tshah@csuchico.edu">tshah@csuchico.edu</a></li>
-  </ul>
-</div>
-
 <hr>
 
 <div class="section">
@@ -342,6 +334,14 @@ print(result)
         However, for large-scale numerical operations, leveraging highly optimized libraries or hardware acceleration may provide the best results.
 </p>
 <hr>
+
+<div class="section">
+  <h2>📞 Contact</h2>
+  <p>For questions or suggestions, feel free to reach out:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:tshah@csuchico.edu">tshah@csuchico.edu</a></li>
+  </ul>
+</div>
 
 </body>
 </html>
