@@ -9,46 +9,96 @@
 
 <h1>🌟 C++ Cleaning Library with PyBind11: High-Performance Data Cleaning 🌟</h1>
 
-What are Pybind11 and ctypes?
-Pybind11: Imagine you're building a LEGO robot, and you want to connect it to a remote control. Pybind11 is like a fancy LEGO adapter that fits perfectly with your robot (C++ code) and remote control (Python). It makes them work together easily and smoothly.
-
-ctypes: This is like a basic glue or tape that helps stick two things together. It works well for simple tasks but isn’t as fancy as the LEGO adapter. It works best if your robot (code) is already simple and doesn’t need a lot of extra features.
-
-How easy are they to use?
-Pybind11: You need to follow some instructions and build the adapter (compile your C++ code), but once it’s done, it works perfectly and feels like magic.
-
-ctypes: No building is required! You just load the robot’s remote control commands (library) and tell it what to do. It’s fast to set up but doesn’t work well if the robot is too complicated.
-
-When are they useful?
-Pybind11: If your robot has lots of parts, like arms, sensors, and wheels, and you need all of them to work with the remote control, Pybind11 is your best choice. It’s perfect for connecting big, complex robots.
-
-ctypes: If your robot is just a simple car that moves forward or backward, ctypes is enough. It’s quick and does the job for small tasks.
-
-How fast are they?
-Pybind11: It’s very fast because it’s specially designed to fit the robot perfectly. But it takes some time to set up.
-
-ctypes: It’s a bit slower because the glue (ctypes) isn’t as strong as the adapter (Pybind11). For big or heavy robots, the glue might not hold well.
-
-Examples
-Pybind11 (Fancy LEGO Adapter):
-You make an adapter to connect your robot to Python.
-Example:
-Robot: A robot arm that draws pictures.
-Remote Control: Python code to tell it to draw a circle.
-ctypes (Basic Glue):
-You call simple commands directly to control your robot.
-Example:
-Robot: A toy car that moves forward.
-Remote Control: Python code to tell it to move 5 steps.
-Which one should you choose?
-Choose Pybind11 if:
-
-Your robot (code) is very complicated, like one with lots of moving parts (C++ classes or advanced math).
-You want your Python remote control to feel like it’s part of the robot.
-Choose ctypes if:
-
-Your robot (code) is simple and doesn’t need much control.
-You just want a quick and easy way to connect.
+<div class="section">
+  <h2>🔧 PyBind11 and Ctypes</h2>
+  <p>
+    <strong>What are Pybind11 and Ctypes?</strong>
+  </p>
+  <p>
+    <strong>Pybind11:</strong> Imagine you're building a LEGO robot, and you want to connect it to a remote control. Pybind11 is like a fancy LEGO adapter that fits perfectly with your robot (C++ code) and remote control (Python). It makes them work together easily and smoothly.
+  </p>
+  <p>
+    <strong>Ctypes:</strong> This is like a basic glue or tape that helps stick two things together. It works well for simple tasks but isn’t as fancy as the LEGO adapter. It works best if your robot (code) is already simple and doesn’t need a lot of extra features.
+  </p>
+  
+  <p>
+    <strong>How easy are they to use?</strong>
+  </p>
+  <p>
+    <strong>Pybind11:</strong> You need to follow some instructions and build the adapter (compile your C++ code), but once it’s done, it works perfectly and feels like magic.
+  </p>
+  <p>
+    <strong>Ctypes:</strong> No building is required! You just load the robot’s remote control commands (library) and tell it what to do. It’s fast to set up but doesn’t work well if the robot is too complicated.
+  </p>
+  
+  <p>
+    <strong>When are they useful?</strong>
+  </p>
+  <ul>
+    <li>
+      <strong>Pybind11:</strong> If your robot has lots of parts, like arms, sensors, and wheels, and you need all of them to work with the remote control, Pybind11 is your best choice. It’s perfect for connecting big, complex robots.
+    </li>
+    <li>
+      <strong>Ctypes:</strong> If your robot is just a simple car that moves forward or backward, ctypes is enough. It’s quick and does the job for small tasks.
+    </li>
+  </ul>
+  
+  <p>
+    <strong>How fast are they?</strong>
+  </p>
+  <ul>
+    <li>
+      <strong>Pybind11:</strong> It’s very fast because it’s specially designed to fit the robot perfectly. But it takes some time to set up.
+    </li>
+    <li>
+      <strong>Ctypes:</strong> It’s a bit slower because the glue (ctypes) isn’t as strong as the adapter (Pybind11). For big or heavy robots, the glue might not hold well.
+    </li>
+  </ul>
+  
+  <p>
+    <strong>Examples:</strong>
+  </p>
+  <ul>
+    <li>
+      <strong>Pybind11 (Fancy LEGO Adapter):</strong> You make an adapter to connect your robot to Python.
+      <br>
+      Example:
+      <ul>
+        <li>Robot: A robot arm that draws pictures.</li>
+        <li>Remote Control: Python code to tell it to draw a circle.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Ctypes (Basic Glue):</strong> You call simple commands directly to control your robot.
+      <br>
+      Example:
+      <ul>
+        <li>Robot: A toy car that moves forward.</li>
+        <li>Remote Control: Python code to tell it to move 5 steps.</li>
+      </ul>
+    </li>
+  </ul>
+  
+  <p>
+    <strong>Which one should you choose?</strong>
+  </p>
+  <ul>
+    <li>
+      Choose <strong>Pybind11</strong> if:
+      <ul>
+        <li>Your robot (code) is very complicated, like one with lots of moving parts (C++ classes or advanced math).</li>
+        <li>You want your Python remote control to feel like it’s part of the robot.</li>
+      </ul>
+    </li>
+    <li>
+      Choose <strong>Ctypes</strong> if:
+      <ul>
+        <li>Your robot (code) is simple and doesn’t need much control.</li>
+        <li>You just want a quick and easy way to connect.</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
 <hr>
 
