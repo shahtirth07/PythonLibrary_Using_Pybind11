@@ -280,6 +280,30 @@ print(cleaned) # ['hello', 'world', 'python']
   </ol>
 </div>
 
+<h1>Performance Comparison: Python Libraries vs C++ Implementation</h1>
+    <p>
+        When comparing the performance of Python libraries like <strong>NumPy</strong> or <strong>Pandas</strong> with custom C++ implementations, 
+        Python libraries often demonstrate faster performance for specific tasks. This is due to the following reasons:
+    </p>
+    <ul>
+        <li><strong>Optimized Libraries:</strong> NumPy and Pandas are built on highly optimized, low-level libraries such as BLAS, LAPACK, and Intel MKL, which are finely tuned for vectorized operations.</li>
+        <li><strong>Parallelization:</strong> These libraries leverage parallel processing and hardware acceleration, such as SIMD (Single Instruction, Multiple Data) or GPU support, out of the box.</li>
+        <li><strong>Memory Layout:</strong> NumPy arrays are optimized for memory alignment and efficient cache utilization, which contributes to their superior performance.</li>
+    </ul>
+
+    <h2>Optimizing the C++ Implementation</h2>
+    <p>To compete with Python libraries, a custom C++ implementation must employ similar optimizations. Here are some suggestions:</p>
+    <ul>
+        <li><strong>Enable SIMD Instructions:</strong> Use libraries such as <a href="https://eigen.tuxfamily.org/dox/" target="_blank">Eigen</a> or <a href="http://arma.sourceforge.net/" target="_blank">Armadillo</a>, or implement SIMD explicitly with AVX or SSE instructions.</li>
+        <li><strong>Parallelize Computation:</strong> Utilize multithreading with <strong>OpenMP</strong> to split the computation across multiple CPU cores.</li>
+        <li><strong>Leverage Efficient Memory Management:</strong> Optimize cache usage and ensure memory alignment for better performance.</li>
+    </ul>
+
+    <h2>Example with OpenMP Parallelization</h2>
+    <p>
+        The C++ implementation can be enhanced using OpenMP for parallelism. Here’s an optimized example:
+    </p>
+
 <hr>
 
 </body>
