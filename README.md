@@ -139,25 +139,6 @@ MATH608_PROJECT/
 
 <hr>
 
-<div class="section">
-  <h2>📦 Installation</h2>
-  <ol>
-    <li>Clone the repository:
-      <pre><code>git clone https://github.com/shahtirth07/MATH608_PROJECT.git
-cd MATH608_PROJECT</code></pre>
-    </li>
-    <li>Build the package:
-      <pre><code>cd src
-python setup.py build_ext --inplace
-python setup.py install</code></pre>
-    </li>
-    <li>Verify installation:
-      <pre><code>from my_cleaning_package import trim_spaces_py
-print(trim_spaces_py("   hello world   "))  # Outputs: "hello world"</code></pre>
-    </li>
-  </ol>
-</div>
-
 <hr>
 
 <div class="section">
